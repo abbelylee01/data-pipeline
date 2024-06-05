@@ -1,0 +1,3 @@
+# config/config.yaml
+input_file_path: data/raw_store_transactions.csv
+db_connection: dbname=abiodunadeoye user=postgres password=bentlee11! host=localhost port=5432

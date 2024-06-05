@@ -1,0 +1,10 @@
+# main.py
+import logging
+
+# Configure the logger
+logging.basicConfig(filename='logs/etl.log', level=logging.INFO)
+
+logger = logging.getLogger('ETLLogger')
+
+if __name__ == "__main__":
+    # Rest of the code here...

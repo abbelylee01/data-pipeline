@@ -1,0 +1,65 @@
+2023-09-23 12:05:52,629 - INFO - Data extraction successful.
+2023-09-23 12:05:52,940 - INFO - Data transformation successful.
+2023-09-23 12:05:53,030 - INFO - Database connection established
+2023-09-23 12:06:18,275 - INFO - Database connection closed
+2023-09-23 12:06:18,279 - INFO - Data loading successful.
+2023-12-16 07:09:50,264 - INFO - Data extraction successful.
+2023-12-16 07:09:50,438 - INFO - Data transformation successful.
+2023-12-16 07:09:51,010 - INFO - Database connection established
+2023-12-16 07:10:04,439 - INFO - Database connection closed
+2023-12-16 07:10:04,441 - INFO - Data loading successful.
+2023-12-16 07:18:07,914 - INFO - Data extraction successful.
+2023-12-16 07:18:08,084 - INFO - Data transformation successful.
+2023-12-16 07:18:08,140 - INFO - Database connection established
+2023-12-16 07:18:08,142 - ERROR - ETL process failed: Error while loading data: schema "production" does not exist
+LINE 2:             CREATE TABLE IF NOT EXISTS production.clean_stor...
+                                               ^
+Traceback (most recent call last):
+  File "c:\Users\Dr Adeoye\Desktop\MASTER CLASS_Data Engineering\Training\Masterclass_Materials\TakeHome\Production\etl\load.py", line 23, in load_data
+    cursor.execute('''
+psycopg2.errors.InvalidSchemaName: schema "production" does not exist
+LINE 2:             CREATE TABLE IF NOT EXISTS production.clean_stor...
+                                               ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Dr Adeoye\Desktop\MASTER CLASS_Data Engineering\Training\Masterclass_Materials\TakeHome\Production\main.py", line 27, in main
+    load_data(transformed_data, config['db_connection'])
+  File "c:\Users\Dr Adeoye\Desktop\MASTER CLASS_Data Engineering\Training\Masterclass_Materials\TakeHome\Production\etl\load.py", line 51, in load_data
+    raise Exception(f"Error while loading data: {str(e)}")
+Exception: Error while loading data: schema "production" does not exist
+LINE 2:             CREATE TABLE IF NOT EXISTS production.clean_stor...
+                                               ^
+
+2023-12-16 07:19:05,309 - INFO - Data extraction successful.
+2023-12-16 07:19:05,491 - INFO - Data transformation successful.
+2023-12-16 07:19:05,550 - INFO - Database connection established
+2023-12-16 07:19:05,551 - ERROR - ETL process failed: Error while loading data: schema "production" does not exist
+LINE 2:             CREATE TABLE IF NOT EXISTS production.clean_stor...
+                                               ^
+Traceback (most recent call last):
+  File "c:\Users\Dr Adeoye\Desktop\MASTER CLASS_Data Engineering\Training\Masterclass_Materials\TakeHome\Production\etl\load.py", line 23, in load_data
+    cursor.execute('''
+psycopg2.errors.InvalidSchemaName: schema "production" does not exist
+LINE 2:             CREATE TABLE IF NOT EXISTS production.clean_stor...
+                                               ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Dr Adeoye\Desktop\MASTER CLASS_Data Engineering\Training\Masterclass_Materials\TakeHome\Production\main.py", line 27, in main
+    load_data(transformed_data, config['db_connection'])
+  File "c:\Users\Dr Adeoye\Desktop\MASTER CLASS_Data Engineering\Training\Masterclass_Materials\TakeHome\Production\etl\load.py", line 51, in load_data
+    raise Exception(f"Error while loading data: {str(e)}")
+Exception: Error while loading data: schema "production" does not exist
+LINE 2:             CREATE TABLE IF NOT EXISTS production.clean_stor...
+                                               ^
+
+2023-12-16 07:20:05,970 - INFO - Data extraction successful.
+2023-12-16 07:20:06,137 - INFO - Data transformation successful.
+2023-12-16 07:20:06,192 - INFO - Database connection established
+2023-12-16 07:20:18,312 - INFO - Database connection closed
+2023-12-16 07:20:18,322 - INFO - Data loading successful.
