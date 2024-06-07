@@ -17,7 +17,7 @@ def main():
 
         # Extract data
         data = extract_data(config['input_file_path'])
-        logging.info("Data extraction successful.")
+        logging.info("Data extraction successful....")
 
         # Transform data
         transformed_data = transform_data(data)
